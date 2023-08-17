@@ -1,0 +1,16 @@
+{
+  "name": "@devexps/types",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@devexps/constants": "workspace:*",
+    "pinia": "2.0.30",
+    "vue": "3.2.47",
+    "vue-router": "^4.1.6"
+  }
+}

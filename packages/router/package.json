@@ -1,0 +1,24 @@
+{
+  "name": "@devexps/router",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@devexps/constants": "workspace:*",
+    "@devexps/components": "workspace:*",
+    "@devexps/locale": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "@devexps/stores": "workspace:*",
+    "nprogress": "^0.2.0",
+    "vue-router": "^4.1.6",
+    "path-to-regexp": "^6.2.1",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@devexps/types": "workspace:*"
+  }
+}

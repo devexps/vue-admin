@@ -1,0 +1,21 @@
+{
+  "name": "@devexps/demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@devexps/request": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "@devexps/devexpscmps": "workspace:*",
+    "vue": "^3.2.47"
+  },
+  "devDependencies": {
+    "@devexps/types": "workspace:*"
+  }
+}

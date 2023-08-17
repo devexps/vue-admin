@@ -1,0 +1,63 @@
+{
+  "name": "@apps/admin",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devexps/vue-admin.git",
+    "directory": "apps/ant-app"
+  },
+  "author": {
+    "name": "devexps",
+    "url": "https://github.com/devexps"
+  },
+  "scripts": {
+    "build": "pnpm cross-env NODE_ENV=production vite build",
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo",
+    "dev": "vite",
+    "preview": "npm run build && vite preview",
+    "preview:dist": "vite preview",
+    "report": "pnpm cross-env REPORT=true npm run build",
+    "server:br": "pnpx http-server dist --cors --brotli -c-1",
+    "server:gzip": "pnpx http-server dist --cors --gzip -c-1",
+    "type:check": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "dependencies": {
+    "@config/vite": "workspace:*",
+    "@devexps/components": "workspace:*",
+    "@devexps/constants": "workspace:*",
+    "@devexps/demo": "workspace:*",
+    "@devexps/directives": "workspace:*",
+    "@devexps/grid-layouts": "workspace:*",
+    "@devexps/hooks": "workspace:*",
+    "@devexps/layouts": "workspace:*",
+    "@devexps/locale": "workspace:*",
+    "@devexps/request": "workspace:*",
+    "@devexps/stores": "workspace:*",
+    "@devexps/styles": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "@devexps/devexpscmps": "workspace:*",
+    "@devexps/router": "workspace:*",
+    "@ant-design/icons-vue": "^6.1.0",
+    "@iconify/iconify": "^3.1.0",
+    "dayjs": "^1.11.7",
+    "mockjs": "^1.1.0",
+    "monaco-editor": "^0.37.1",
+    "pinia": "2.0.35",
+    "vue": "3.2.47",
+    "vue-demi": "^0.14.0",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@devexps/types": "workspace:*",
+    "@config/css-preprocess": "workspace:*",
+    "@config/vite": "workspace:*",
+    "@types/mockjs": "^1.0.7",
+    "@types/nprogress": "^0.2.0",
+    "@vue/compiler-sfc": "3.2.47",
+    "@vue/test-utils": "^2.3.2",
+    "naive-ui": "^2.34.3",
+    "typescript": "^5.0.4",
+    "vite": "4.3.1",
+    "vue-tsc": "^1.4.4"
+  }
+}

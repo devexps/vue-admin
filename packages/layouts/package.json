@@ -1,0 +1,23 @@
+{
+  "name": "@devexps/layouts",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@devexps/devexpscmps": "workspace:*",
+    "@devexps/constants": "workspace:*",
+    "@devexps/directives": "workspace:*",
+    "@devexps/hooks": "workspace:*",
+    "@devexps/locale": "workspace:*",
+    "@devexps/router": "workspace:*",
+    "@devexps/types": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "@devexps/stores": "workspace:*",
+    "vue": "3.2.47",
+    "vue-router": "^4.1.6"
+  }
+}

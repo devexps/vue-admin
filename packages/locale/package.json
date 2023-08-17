@@ -1,0 +1,17 @@
+{
+  "name": "@devexps/locale",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@devexps/constants": "workspace:*",
+    "@devexps/types": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "vue": "3.2.47",
+    "vue-i18n": "^9.2.2"
+  }
+}

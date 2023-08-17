@@ -1,0 +1,26 @@
+{
+  "name": "@devexps/grid-layouts",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@devexps/constants": "workspace:*",
+    "@devexps/directives": "workspace:*",
+    "@devexps/hooks": "workspace:*",
+    "@devexps/locale": "workspace:*",
+    "@devexps/stores": "workspace:*",
+    "@devexps/router": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "@devexps/devexpscmps": "workspace:*",
+    "pinia": "^2.0.30",
+    "vue": "3.2.45",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@devexps/types": "workspace:*"
+  }
+}

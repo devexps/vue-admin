@@ -1,0 +1,24 @@
+{
+  "name": "@devexps/components",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@iconify/iconify": "^3.0.0",
+    "@devexps/constants": "workspace:*",
+    "@devexps/locale": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "qrcode": "^1.5.1",
+    "vue": "3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.15",
+    "@purge-icons/generated": "^0.9.0",
+    "@types/qrcode": "^1.5.0"
+  }
+}

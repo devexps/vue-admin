@@ -1,0 +1,27 @@
+{
+  "name": "@devexps/devexpscmps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "module": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@iconify/iconify": "^3.0.0",
+    "@devexps/hooks": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "@devexps/constants": "workspace:*",
+    "@devexps/locale": "workspace:*",
+    "sass": "^1.55.0",
+    "vue": "^3.2.47",
+    "vxe-table-demonic": "^4.5.0-beta.3",
+    "xe-utils": "^3.5.7"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.15",
+    "@purge-icons/generated": "^0.9.0"
+  }
+}

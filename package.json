@@ -1,0 +1,61 @@
+{
+  "name": "vue-admin-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/devexps/vue-admin",
+  "bugs": {
+    "url": "https://github.com/devexps/vue-admin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devexps/vue-admin.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "build": "pnpm --filter scripts build",
+    "changeset": "changeset",
+    "clean": "pnpm turbo run clean && rimraf node_modules",
+    "dev": "pnpm --filter scripts dev",
+    "serve": "pnpm --filter @apps/admin dev",
+    "format": "pnpm run lint:eslint & pnpm run lint:stylelint & pnpm run lint:prettier",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "pnpm run stub",
+    "lint:eslint": "eslint . --cache --max-warnings 0 --fix",
+    "lint:prettier": "prettier --write  \"{packages,apps,configs,scripts}/**/*.{js,json,ts,tsx,css,less,scss,vue,html,md}\"",
+    "lint:stylelint": "stylelint --fix ",
+    "reinstall": "pnpm turbo run clean && rimraf pnpm-lock.yaml && rimraf node_modules && npm run bootstrap",
+    "stub": "pnpm --filter @config/** prepack",
+    "test": "vitest",
+    "turbo:build": "turbo run build --parallel",
+    "turbo:dev": "turbo run dev --parallel",
+    "turbo:preview": "turbo run preview --parallel",
+    "version": "pnpm run changeset version"
+  },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  },
+  "devDependencies": {
+    "@config/lint": "workspace:*",
+    "tsconfig": "workspace:*",
+    "@changesets/cli": "^2.26.1",
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^18.16.0",
+    "cross-env": "^7.0.3",
+    "esno": "^0.16.3",
+    "fs-extra": "^11.1.1",
+    "jsdom": "^21.1.1",
+    "pathe": "^1.1.0",
+    "rimraf": "^4.4.1",
+    "rollup": "^3.21.0",
+    "ts-node": "^10.9.1",
+    "turbo": "^1.9.3",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.1",
+    "vitest": "^0.30.1"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "packageManager": "pnpm@7.1.0"
+}

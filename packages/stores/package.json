@@ -1,0 +1,22 @@
+{
+  "name": "@devexps/stores",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@devexps/constants": "workspace:*",
+    "@devexps/locale": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "pinia": "^2.0.35",
+    "pinia-plugin-persistedstate": "^3.1.0",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@devexps/types": "workspace:*"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@devexps/hooks",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "module": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "pnpm rimraf node_modules && pnpm rimraf dist && pnpm rimraf .turbo"
+  },
+  "dependencies": {
+    "@devexps/constants": "workspace:*",
+    "@devexps/locale": "workspace:*",
+    "@devexps/stores": "workspace:*",
+    "@devexps/utils": "workspace:*",
+    "vue": "^3.2.47",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@devexps/types": "workspace:*"
+  }
+}
