@@ -7,6 +7,7 @@ Backstage Management System compatible with backend using [go-micro](https://git
 Install and Run
 ```
 git clone https://github.com/devexps/vue-admin.git
+cd vue-admin
 pnpm i
 pnpm dev
 ```
