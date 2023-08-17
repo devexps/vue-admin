@@ -11,3 +11,7 @@ cd vue-admin
 pnpm i
 pnpm dev
 ```
+
+Screenshots
+
+![demo login screen](./apps/admin/docs/login-screen.png)
